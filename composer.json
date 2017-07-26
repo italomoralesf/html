@@ -1,0 +1,21 @@
+{
+    "name": "italomoralesf/html",
+    "description": "Extension of the HTML component in LARAVEL",
+    "type": "library",
+    "require": {
+        "laravelcollective/html": "^5.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "italomoralesf",
+            "email": "i@italomoralesf.com"
+        }
+    ],
+    "minimum-stability": "dev",    
+    "autoload": {
+        "psr-4": {
+            "Italomoralesf\\Html\\": "src/"
+        }
+    }
+}
