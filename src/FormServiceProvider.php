@@ -27,7 +27,7 @@ class FormServiceProvider extends ServiceProvider
         Form::component('rSelect',   'italomoralesf::components.form.select',  ['name', 'label', 'items']);
         Form::component('rSubmit',   'italomoralesf::components.form.submit',  ['label']);
         Form::component('rHidden',   'italomoralesf::components.form.hidden',  ['name', 'value']);
-        Form::component('rHidden',   'italomoralesf::components.form.hidden',  ['name', 'label']);
+        Form::component('rPassword', 'italomoralesf::components.form.password',['name', 'label']);
     }
 
     /**
