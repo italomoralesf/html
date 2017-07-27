@@ -5,8 +5,8 @@
 
 		<label>
 			{{ Form::radio($name, $key) }}
-			{{ $value }} 	
-		</label> &nbsp;
+			{{ $value }} &nbsp;	
+		</label>
 		
 	@endforeach
 </div>
