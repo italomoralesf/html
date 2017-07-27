@@ -1,1 +1,1 @@
-{{ Form::hidden($name, $value) }}
+{{ Form::hidden($name, $value, ['id' => $name]) }}

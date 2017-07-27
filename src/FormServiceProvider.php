@@ -18,6 +18,7 @@ class FormServiceProvider extends ServiceProvider
 
         
         Form::component('rText',     'italomoralesf::components.form.text',    ['name', 'label', 'attributes']);
+        Form::component('rEmail',     'italomoralesf::components.form.text',    ['name', 'label', 'attributes']);
         Form::component('rTextarea', 'italomoralesf::components.form.textarea',['name', 'label', 'attributes']);
         Form::component('rEditor',   'italomoralesf::components.form.editor',  ['name', 'label', 'attributes']);
         Form::component('rSearch',   'italomoralesf::components.form.search',  ['name', 'route']);
@@ -26,6 +27,7 @@ class FormServiceProvider extends ServiceProvider
         Form::component('rSelect',   'italomoralesf::components.form.select',  ['name', 'label', 'items']);
         Form::component('rSubmit',   'italomoralesf::components.form.submit',  ['label']);
         Form::component('rHidden',   'italomoralesf::components.form.hidden',  ['name', 'value']);
+        Form::component('rHidden',   'italomoralesf::components.form.hidden',  ['name', 'label']);
     }
 
     /**
