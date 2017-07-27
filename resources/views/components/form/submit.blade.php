@@ -1,3 +1,3 @@
-<div class="form-group">
-    {{ Form::submit($label, ['class' => 'btn btn-primary pull-right']) }}
+<div class="box-footer">
+	{{ Form::submit($label, ['class' => 'btn btn-primary pull-right']) }}
 </div>
