@@ -18,13 +18,13 @@ class FormServiceProvider extends ServiceProvider
 
         
         Form::component('rText',     'italomoralesf::components.form.text',    ['name', 'label', 'attributes']);
-        Form::component('rEmail',     'italomoralesf::components.form.text',    ['name', 'label', 'attributes']);
+        Form::component('rEmail',    'italomoralesf::components.form.text',    ['name', 'label', 'attributes']);
         Form::component('rTextarea', 'italomoralesf::components.form.textarea',['name', 'label', 'attributes']);
         Form::component('rEditor',   'italomoralesf::components.form.editor',  ['name', 'label', 'attributes']);
         Form::component('rSearch',   'italomoralesf::components.form.search',  ['name', 'route']);
-        Form::component('rImage',    'italomoralesf::components.form.image',   ['name', 'label']);
+        Form::component('rImage',    'italomoralesf::components.form.image',   ['name', 'label', 'attributes']);
         Form::component('rRadio',    'italomoralesf::components.form.radio',   ['name', 'label', 'items']);
-        Form::component('rSelect',   'italomoralesf::components.form.select',  ['name', 'label', 'items']);
+        Form::component('rSelect',   'italomoralesf::components.form.select',  ['name', 'label', 'items', 'attributes']);
         Form::component('rSubmit',   'italomoralesf::components.form.submit',  ['label']);
         Form::component('rHidden',   'italomoralesf::components.form.hidden',  ['name', 'value']);
         Form::component('rPassword', 'italomoralesf::components.form.password',['name', 'label']);
