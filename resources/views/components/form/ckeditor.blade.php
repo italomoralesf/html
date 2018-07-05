@@ -1,6 +1,6 @@
 <div class="form-group">
-    {{ Form::label($name or 'body', $label or 'Contenido', ['class' => 'control-label']) }}
-    {{ Form::textarea($name, null) }}
+    {{ Form::label($name ?: 'body', $label ?: 'Contenido', ['class' => 'control-label']) }}
+    {{ Form::textarea($name ?: 'body', null) }}
 </div>
 
 @section('javascript')
@@ -10,7 +10,7 @@
 		CKEDITOR.config.height = 100;
 		CKEDITOR.config.width  = 'auto';
 
-		CKEDITOR.replace("{{ $name or 'body' }}");
+		CKEDITOR.replace("{{ $name ?: 'body' }}");
 
 		/**
 		 * //cdn.ckeditor.com/4.10.0/standard/ckeditor.js

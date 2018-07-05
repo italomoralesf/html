@@ -1,4 +1,4 @@
-{{ Form::submit($label or 'Enviar', array_merge(
-	['class' => "btn btn-$color or 'primary'"], 
-	$attributes or []) 
+{{ Form::submit($label ?: 'Enviar', array_merge(
+	['class' => "btn btn-$color ?: 'primary'"], 
+	$attributes ?: []) 
 }}
