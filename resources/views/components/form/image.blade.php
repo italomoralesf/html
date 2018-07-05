@@ -1,4 +1,4 @@
 <div class="form-group">
-    {{ Form::label($name, $label, ['class' => 'control-label']) }}
-    {{ Form::file($name, $attributes) }}
+    {{ Form::label($name or 'file', $label or 'Imagen', ['class' => 'control-label']) }}
+    {{ Form::file($name or 'file', $attributes or []) }}
 </div>

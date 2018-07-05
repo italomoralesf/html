@@ -1,5 +1,5 @@
-{{ Form::open(['route' => $route, 'method' => 'GET', 'class' => 'pull-right']) }}
+{{ Form::open(array_merge(['route' => $route or '/s', 'method' => 'GET'], $attributes or []) }}
 	
-	{{ Form::search($name, null, ['class' => 'form-control input-sm', 'placeholder' => 'Buscador...']) }}
+	{{ Form::search($name or 'search', null, ['class' => 'form-control', 'placeholder' => 'Buscador...']) }}
 
 {{ Form::close() }}

@@ -17,17 +17,19 @@ class FormServiceProvider extends ServiceProvider
         $this->runView();
 
         
-        Form::component('rText',     'italomoralesf::components.form.text',    ['name', 'label', 'attributes']);
-        Form::component('rEmail',    'italomoralesf::components.form.text',    ['name', 'label', 'attributes']);
-        Form::component('rTextarea', 'italomoralesf::components.form.textarea',['name', 'label', 'attributes']);
-        Form::component('rEditor',   'italomoralesf::components.form.editor',  ['name', 'label', 'attributes']);
-        Form::component('rSearch',   'italomoralesf::components.form.search',  ['name', 'route']);
-        Form::component('rImage',    'italomoralesf::components.form.image',   ['name', 'label', 'attributes']);
-        Form::component('rRadio',    'italomoralesf::components.form.radio',   ['name', 'label', 'items']);
-        Form::component('rSelect',   'italomoralesf::components.form.select',  ['name', 'label', 'items', 'attributes']);
-        Form::component('rSubmit',   'italomoralesf::components.form.submit',  ['label']);
-        Form::component('rHidden',   'italomoralesf::components.form.hidden',  ['name', 'value']);
-        Form::component('rPassword', 'italomoralesf::components.form.password',['name', 'label']);
+        Form::component('rCKEditor', 'html::components.form.ckeditor', ['name',    'label']);
+        Form::component('rEmail',    'html::components.form.email',    ['label',   'attributes']);
+        Form::component('rHidden',   'html::components.form.hidden',   ['name',    'value']);
+        Form::component('rImage',    'html::components.form.image',    ['name',    'label',   'attributes']);
+        Form::component('rRadio',    'html::components.form.radio',    ['items',   'name',    'label']);
+        Form::component('rSelect',   'html::components.form.select',   ['items',   'name',    'label']);
+        Form::component('rSearch',   'html::components.form.search',   ['route',   'name',    'attributes']);
+        Form::component('rSubmit',   'html::components.form.submit',   ['label',   'color',   'attributes']);
+        Form::component('rText',     'html::components.form.text',     ['name',    'label',   'attributes']);
+        Form::component('rTextarea', 'html::components.form.textarea', ['name',    'label',   'attributes']);
+        Form::component('rCheckbox', 'html::components.form.checkbox', ['name',    'value',   'attributes']);
+        Form::component('rButton',   'html::components.form.button',   ['label',   'color',   'attributes']);
+
     }
 
     /**
@@ -42,6 +44,6 @@ class FormServiceProvider extends ServiceProvider
 
     public function runView()
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'italomoralesf');        
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'html');        
     }
 }
