@@ -1,4 +1,8 @@
-{{ Form::submit($label ?: 'Enviar', array_merge(
-	['class' => "btn btn-$color ?: 'primary'"], 
-	$attributes ?: []) 
-}}
+<div class="form-group">
+	
+	<input 
+		type="submit" 
+		class="btn btn-{{ $color ?: 'primary' }} btn-{{ $size or 'sm' }}" 
+		value="{{ $label or 'Enviar' }}">
+
+</div>

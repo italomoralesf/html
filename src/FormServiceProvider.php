@@ -16,19 +16,19 @@ class FormServiceProvider extends ServiceProvider
     {        
         $this->runView();
 
-        
-        Form::component('rCKEditor', 'html::components.form.ckeditor', ['name',    'label']);
-        Form::component('rEmail',    'html::components.form.email',    ['label',   'attributes']);
-        Form::component('rHidden',   'html::components.form.hidden',   ['name',    'value']);
-        Form::component('rImage',    'html::components.form.image',    ['name',    'label',   'attributes']);
-        Form::component('rRadio',    'html::components.form.radio',    ['items',   'name',    'label']);
-        Form::component('rSelect',   'html::components.form.select',   ['items',   'name',    'label']);
-        Form::component('rSearch',   'html::components.form.search',   ['route',   'name',    'attributes']);
-        Form::component('rSubmit',   'html::components.form.submit',   ['label',   'color',   'attributes']);
-        Form::component('rText',     'html::components.form.text',     ['name',    'label',   'attributes']);
-        Form::component('rTextarea', 'html::components.form.textarea', ['name',    'label',   'attributes']);
-        Form::component('rCheckbox', 'html::components.form.checkbox', ['name',    'value',   'attributes']);
-        Form::component('rButton',   'html::components.form.button',   ['label',   'color',   'attributes']);
+        //form
+        Form::component('rCKEditor', 'form::ckeditor', ['name',    'label']);
+        Form::component('rEmail',    'form::email',    ['label',   'attributes']);
+        Form::component('rHidden',   'form::hidden',   ['name',    'value']);
+        Form::component('rImage',    'form::image',    ['name',    'label',   'attributes']);
+        Form::component('rRadio',    'form::radio',    ['items',   'name',    'label']);
+        Form::component('rSelect',   'form::select',   ['items',   'name',    'label']);
+        Form::component('rSubmit',   'form::submit',   ['label',   'color',   'size']);
+        Form::component('rText',     'form::text',     ['name',    'label',   'attributes']);
+        Form::component('rPassword', 'form::password', ['label']);
+        Form::component('rTextarea', 'form::textarea', ['name',    'label',   'attributes']);
+        Form::component('rCheckbox', 'form::checkbox', ['name',    'value',   'label',   'attributes']);
+        Form::component('rButton',   'form::button',   ['label',   'color',   'size']);
 
     }
 
@@ -44,6 +44,7 @@ class FormServiceProvider extends ServiceProvider
 
     public function runView()
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'html');        
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/components/form',     'form');      
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/components/template', 'template');      
     }
 }

@@ -1,4 +1,7 @@
-{{ Form::button($label ?: 'Enviar', array_merge(
-	['class' => "btn btn-$color ?: 'primary'"], 
-	$attributes ?: []) 
-}}
+<div class="form-group">
+	
+	<button class="btn btn-{{ $color ?: 'primary' }} btn-{{ $size or 'sm' }}">
+		{{ $slot or 'Enviar' }}
+	</button>
+
+</div>
