@@ -4,9 +4,9 @@ Based on: LaravelCollective, Official documentation for Forms & Html for The Lar
 
 # Laravel 5.5
 
-#Plantillas (template)
+# Plantillas (template)
     
-###Alert
+### Alert
 
 ```php
 @component('template::alert')
@@ -20,7 +20,7 @@ Based on: LaravelCollective, Official documentation for Forms & Html for The Lar
 @endcomponent
 ```
 
-###Breadcrumb
+### Breadcrumb
 
 ```php
 @component('template::breadcrumb', ['breadcrumb' => ['/module' => 'Módulo', '/sub-module' => 'SubMódulo']])
@@ -28,7 +28,7 @@ Based on: LaravelCollective, Official documentation for Forms & Html for The Lar
 @endcomponent
 ```
 
-###Btn Dropdown
+### Btn Dropdown
 
 ```php
 @component('template::btn-dropdown', ['links' => ['/action-1' => 'Acción 1', '/action-2' => 'Acción 2']])
@@ -36,7 +36,7 @@ Based on: LaravelCollective, Official documentation for Forms & Html for The Lar
 @endcomponent
 ```
 
-###Btn Group
+### Btn Group
 
 ```php
 @component('template::btn-group', ['buttons' => ['/btn-1' => 'Btn 1', '/btn-2' => 'Btn 2']]) @endcomponent
@@ -50,7 +50,7 @@ Based on: LaravelCollective, Official documentation for Forms & Html for The Lar
 ]) @endcomponent    
 ```
 
-###Link Icon
+### Link Icon
 
 ```php
 @component('template::link-icon', ['route' => '#', 'icon' => 'plus-square'])
@@ -64,7 +64,7 @@ Based on: LaravelCollective, Official documentation for Forms & Html for The Lar
 @endcomponent
 ```
 
-###Link
+### Link
 
 ```php
 @component('template::link', ['route' => '#'])
@@ -78,9 +78,9 @@ Based on: LaravelCollective, Official documentation for Forms & Html for The Lar
 @endcomponent    
 ```
 
-#Elemento de Formularios (form)
+# Elemento de Formularios (form)
 
-###Button
+### Button
 
 ```php
 {{ Form::rButton() }}
@@ -88,7 +88,7 @@ Based on: LaravelCollective, Official documentation for Forms & Html for The Lar
 
 Parámetros `['label', 'color', []]`
 
-###Checkbox
+### Checkbox
 
 ```php
 {{ Form::rCheckbox('courses', 'php', 'PHP') }}
@@ -97,7 +97,7 @@ Parámetros `['label', 'color', []]`
 
 Parámetros `['name', 'value', []]`
 
-###CKEditor
+### CKEditor
 
 ```php
 {{ Form::rCKEditor() }}
@@ -105,7 +105,7 @@ Parámetros `['name', 'value', []]`
 
 Parámetros `['name', 'label']`
 
-###Email
+### Email
 
 ```php
 {{ Form::rEmail() }}
@@ -113,7 +113,7 @@ Parámetros `['name', 'label']`
 
 Parámetros `['label', []]`
 
-###Hidden
+### Hidden
 
 ```php
 {{ Form::rHidden('id', 1) }}
@@ -122,7 +122,7 @@ Parámetros `['label', []]`
 Parámetros `['name', 'value']`
 ...
 
-###Image
+### Image
 
 ```php
 {{ Form::rImage() }}
@@ -130,7 +130,7 @@ Parámetros `['name', 'value']`
 
 Parámetros `['name', 'label', []]`
 
-###Password
+### Password
 
 ```php
 {{ Form::rPassword() }}
@@ -138,7 +138,7 @@ Parámetros `['name', 'label', []]`
 
 Parámetros `['label']`
 
-###Radio
+### Radio
 
 ```php
 {{ Form::rRadio(['1' => 'PHP', '2' => 'Laravel']) }}
@@ -146,7 +146,7 @@ Parámetros `['label']`
 
 Parámetros `['items', 'name', 'label']`
 
-###Submit
+### Submit
 
 ```php
 {{ Form::rSubmit() }}
@@ -154,7 +154,7 @@ Parámetros `['items', 'name', 'label']`
 
 Parámetros `['label' 'color', []]`
 
-###Text
+### Text
 
 ```php
 {{ Form::rText('name', 'Nombre *') }}
@@ -162,7 +162,7 @@ Parámetros `['label' 'color', []]`
 
 Parámetros `['name', 'label', []]`
 
-###Textarea
+### Textarea
 
 ```php
 {{ Form::rTextarea('body', 'Contenido *') }}
